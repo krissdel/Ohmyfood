@@ -1,0 +1,191 @@
+@import url("./common.css");
+:root {
+    --primary: #edefef;   
+}
+main {
+	width: 90%;
+	background-color: var(--primary);
+	border: 2px solid #f9f9f9e6;
+	box-shadow: 1px 5px 10px #F0F0F0;
+	margin-bottom: 30%;
+	margin-top: 10%;
+	margin-left: 5%;
+}
+
+.entree,
+.plat,
+.desert {
+	text-align: center;
+	padding: 5%;
+	font-family: 'Croissant One', cursive;
+	font-weight: lighter;
+}
+
+.plat {
+	color: black;
+}
+
+.desert {
+	color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+.desert {
+	text-align: center;
+}
+
+.desert li {
+	margin-bottom: 7%;
+}
+
+.prix {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 5%;
+}
+
+.gli1,
+.gli2,
+.gli3 {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	color: #0887fb;
+	font-family: 'Croissant One', cursive;
+}
+
+.gliph1 {
+	width: 20%;
+}
+
+.gli1 h3 {
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: lighter;
+	color: black;
+}
+
+.gli2 h3 {
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: lighter;
+	color: black;
+}
+
+.gli3 h3 {
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: lighter;
+	color: black;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to bottom right, #0887fb,#c0d9dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h4 {
+	font-size: 2em;
+	font-family: 'Devonshire', cursive;
+	font-weight: 500;
+}
+
+
+/*---------------animation------------------*/
+
+.left {
+	position: relative;
+}
+
+.left:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.left:hover:before {
+	visibility: visible;
+	width: 100%;
+}
+
+
+/*------------------------responsive----------------------*/
+
+@media only screen and (min-width: 768px) {
+	.menu {
+		padding: 4%;
+		font-family: 'Pangolin', cursive;
+	}
+	.screen {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+	}
+	main {
+		width: 80%;
+		max-width: 800px;
+		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 25%;
+	}
+	.entree,
+	.plat,
+	.desert {
+		font-size: 1em;
+		color: black;
+	}
+	ul {
+		list-style: none;
+	}
+	.prix {
+		text-align: right;
+	}
+	.gliph {
+		font-size: 2em;
+	}
+	.gli1 h3 {
+		font-size: 1.4rem;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.gli2 h3 {
+		font-size: 1.4rem;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.gli3 h3 {
+		font-size: 1.4rem;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	h2 {
+		font-size: 4em;
+	}
+	h4 {
+		font-size: 4em;
+	}
+	.gliph1 {
+		width: 30%;
+	}
+}

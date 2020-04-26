@@ -1,0 +1,224 @@
+@import url("./common.css");
+html {
+  --primary: #fff5fe;   
+}
+main {
+	color: #3d1319;
+	width: 90%;
+	background-color: var(--primary);
+	border: 2px solid #f9f9f9e6;
+	box-shadow: 1px 5px 10px #F0F0F0;
+	margin-bottom: 30%;
+	margin-top: 10%;
+	margin-left: 5%;
+}
+
+.entree,
+.plat,
+.desert {
+	text-align: center;
+	padding: 5%;
+	font-family: 'Croissant One', cursive;
+	font-weight: lighter;
+}
+
+.entree {
+	color: #c67412;
+}
+
+.plat {
+	color: #a56799;
+}
+
+.desert {
+	color: #6e4ccc;
+}
+
+ul {
+  list-style: none;
+  font-size: 1em;
+}
+
+.desert {
+	text-align: center;
+}
+
+.desert li {
+	margin-bottom: 7%;
+}
+
+.prix {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 5%;
+}
+
+.png {
+	text-align: center;
+	padding-top: 6%;
+	font-size: small;
+}
+
+.png11 {
+	width: 20%;
+}
+
+.gli1,
+.gli2,
+.gli3 {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	color: #0887fb;
+	font-family: 'Croissant One', cursive;
+}
+
+.gliph1 {
+	width: 20%;
+}
+
+.gli1 h3 {
+	text-align: center;
+	font-size: 1.2em;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: lighter;
+	color: #C6740D;
+}
+
+.gli2 h3 {
+	text-align: center;
+	font-size: 1.2em;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: lighter;
+	color: #a56799;
+}
+
+.gli3 h3 {
+	text-align: center;
+	font-size: 1.2em;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: lighter;
+	color: #6e4ccc;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.6em;
+	font-family: 'Croissant One', cursive;
+  font-weight: 500;
+  background: linear-gradient(to bottom right, #ff8a00,#975fea);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h4 {
+	font-size: 2em;
+	font-family: 'Devonshire', cursive;
+	font-weight: 500;
+}
+
+
+/*---------------animation------------------*/
+
+.left {
+	position: relative;
+}
+
+.left:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.left:hover:before {
+	visibility: visible;
+	width: 100%;
+}
+
+.footer h3:hover {
+	animation-name: shake;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+
+/*------------------------responsive----------------------*/
+
+@media only screen and (min-width: 768px) {
+	.menu {
+		display: flex;
+		justify-content: space-between;
+		padding: 1%;
+		font-family: 'Pangolin', cursive;
+		justify-content: center;
+	}
+	.screen {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+	}
+	main {
+		width: 80%;
+		max-width: 800px;
+		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 25%;
+	}
+	.entree,
+	.plat,
+	.desert {
+    font-size: 1em;
+    width: 100%;
+    padding: 10%;
+  }
+  .desert {
+    text-align: left;
+  }
+	ul {
+    list-style: none;
+    width: 100%;
+	}
+	.plat {
+		margin-right: 1%;
+	}
+	.prix {
+		text-align: right;
+	}
+	.gliph {
+		font-size: 2em;
+	}
+	.gli1 h3 {
+		font-size: 1.4rem;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.gli2 h3 {
+		font-size: 1.4rem;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.gli3 h3 {
+		font-size: 1.4rem;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	h2 {
+		font-size: 3em;
+	}
+	h4 {
+		font-size: 4em;
+	}
+	.gliph1 {
+		width: 30%;
+	}
+}

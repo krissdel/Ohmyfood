@@ -1,0 +1,143 @@
+@import url("./common.css");
+:root {
+  --primary: #fcdfdb;  
+}
+ main {
+     color: #3d1319;
+     width: 90%;
+     background-color: var(--primary);
+     border: 2px solid #f9f9f9e6;
+     box-shadow: 1px 5px 10px #F0F0F0;
+     margin-bottom: 30%;
+     margin-top: 10%;
+     margin-left: 5%;
+}
+ .entree, .plat, .desert {
+     text-align: center;
+     padding: 5%;
+     font-family: 'Pangolin', cursive;
+     font-weight: lighter;
+}
+ ul {
+     list-style: none;
+}
+ .desert {
+     text-align: center;
+}
+ .desert li {
+     margin-bottom: 7%;
+}
+ .prix {
+     text-align: center;
+     font-weight: bold;
+     margin-bottom: 5%;
+}
+ .png {
+     text-align: center;
+     padding-top: 6%;
+     font-size: small;
+}
+ .png11 {
+     width: 20%;
+}
+ .png2 {
+     margin-top: 9%;
+     display: flex;
+     justify-content: center;
+     align-items: baseline;
+}
+ .png22 {
+     width: 15%;
+}
+ .gliph {
+     display: flex;
+     justify-content: center;
+     align-items: baseline;
+     font-family: 'Pangolin', cursive;
+}
+ .gliph1 {
+     width: 20%;
+}
+ .gliph h3 {
+     text-align: center;
+     font-size: 1.5em;
+     margin-left: 5%;
+     margin-right: 5%;
+     font-weight: lighter;
+}
+ h2 {
+     text-align: center;
+     font-size: 3em;
+     font-family: 'Devonshire', cursive;
+     font-weight: 500;
+}
+ h4 {
+     font-size: 2em;
+     font-family: 'Devonshire', cursive;
+     font-weight: 500;
+}
+/*------------------------responsive----------------------*/
+ @media only screen and (min-width: 768px) {
+     .menu {
+         display: flex;
+         justify-content: space-between;
+         padding: 1%;
+         font-family: 'Pangolin', cursive;
+    }
+     .screen {
+         display: flex;
+         justify-content: space-between;
+         text-align: left;
+    }
+     main {
+         width: 80%;
+         max-width: 800px;
+         margin: auto;
+         margin-top: 10%;
+         margin-bottom: 25%;
+     }   
+     .entree, .plat, .desert {
+         font-size: 1.2em;
+         width: 90%;
+   
+    }
+    .desert {
+      text-align: left;
+ }
+     ul {
+         list-style: none;
+    }
+     .prix {
+         text-align: right;
+         width: 62px;
+    }
+     .png2 {
+         margin-top: 9%;
+         display: flex;
+         justify-content: center;
+         line-height: 0px;
+         margin-bottom: 27%;
+         align-items: baseline;
+    }
+     .gliph {
+      width: 95%;   
+      font-size: 2em;
+      justify-content: space-between;
+      padding: 2%;
+    
+    }
+     .gliph h3 {
+         font-size: 2.2rem;
+         margin-left: 2%;
+         margin-right: 2%;
+    }
+     h2 {
+         font-size: 5em;
+    }
+     h4 {
+         font-size: 4em;
+    }
+     .gliph1 {
+         width: 30%;
+    }
+}

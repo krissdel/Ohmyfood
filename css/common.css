@@ -1,0 +1,99 @@
+@keyframes shake {
+   0%, 100% {
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0);
+  }
+   10%, 30%, 50%, 70%, 90% {
+       -webkit-transform: translate3d(-10px, 0, 0);
+       transform: translate3d(-10px, 0, 0);
+  }
+   20%, 40%, 60%, 80% {
+       -webkit-transform: translate3d(10px, 0, 0);
+       transform: translate3d(10px, 0, 0);
+  }
+}
+body {
+   margin: 0;
+   width: auto;
+   height: auto;
+}
+header {
+   text-align: center;
+   background-color: #569c87;
+   color: #f7c948;
+   font-family: 'Roboto', sans-serif;
+   width: 100%;
+   padding-bottom: 1px;
+   padding-top: 1px;
+}
+.underline {
+   text-decoration: none;
+   color: #fcca46;
+}
+/*--------------animation---------------------*/
+.footer h3:hover {
+   animation-name: shake;
+   animation-duration: 1s;
+   animation-fill-mode: both;
+}
+.left {
+   position: relative;
+}
+.left:before {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 1px;
+   bottom: 0;
+   left: 0;
+   background-color: black;
+   visibility: hidden;
+   transition: all 0.3s ease-in-out;
+}
+.left:hover:before {
+   visibility: visible;
+   width: 100%;
+}
+/*------------------------footer----------------------*/
+.footer {
+   display: flex;
+   border: 2px solid #569c87;
+   justify-content: space-around;
+   background-color: #569c87;
+   color: #fcca46;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   font-family: 'Roboto', sans-serif;
+}
+.gauche h3 {
+   margin-right: 20px;
+   text-decoration: underline;
+   text-decoration-color: #569c87;
+   color: #fcca46;
+   font-size: 1em;
+}
+.droite h3 {
+   margin-right: 20px;
+   text-decoration: underline;
+   text-decoration-color: #569c87;
+   color: #fcca46;
+   font-size: 1em;
+}
+h3 {
+   text-align: center;
+}
+/*------------------------responsive----------------------*/
+@media only screen and (min-width: 768px) {
+   header {
+       text-align: center;
+       background-color: #569c87;
+       color: #f7c948;
+       font-family: 'Roboto', sans-serif;
+       width: 100%;
+       padding-bottom: 1px;
+       padding-top: 1px;
+       font-size: 1.3em;
+  }
+}
