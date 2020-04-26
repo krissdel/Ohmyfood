@@ -18,7 +18,8 @@ h1
 }
 .mentions
 {
-    text-align: justify;
+	text-align: justify;
+	padding: 2%;
 }
 /*------------------------responsive----------------------*/
 
