@@ -1,7 +1,8 @@
 @import url("./common.css");
 :root {
-    --primary: #edefef;   
+	--primary: #edefef;
 }
+
 main {
 	width: 90%;
 	background-color: var(--primary);
@@ -92,11 +93,11 @@ h2 {
 	text-align: center;
 	font-size: 2.5em;
 	font-weight: 500;
-    font-family: 'Dancing Script', cursive;
-    background: linear-gradient(to bottom right, #0887fb,#c0d9dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+	font-family: 'Dancing Script', cursive;
+	background: linear-gradient(to bottom right, #0887fb, #c0d9dc);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 h4 {

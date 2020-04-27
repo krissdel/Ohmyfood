@@ -1,10 +1,12 @@
 @import url("./common.css");
-:root{
-  --primary1: #fcdfdb; 
-  --primary2: #fff5fe;
-  --primary3: #f9f9f9;
-  --primary4: #fdfffd;;   
+:root {
+	--primary1: #fcdfdb;
+	--primary2: #fff5fe;
+	--primary3: #f9f9f9;
+	--primary4: #fdfffd;
+	;
 }
+
 @keyframes flash {
 	25%,
 	75% {
@@ -56,8 +58,7 @@ main {
 .inside h2 {
 	font-size: 2em;
 	font-family: 'Devonshire', cursive;
-  font-weight: lighter;
-  
+	font-weight: lighter;
 }
 
 .menu1 p {
@@ -72,11 +73,11 @@ main {
 
 .menu2 h2 {
 	font-family: 'Croissant One', cursive;
-  font-size: 1.2em;
-  background: linear-gradient(to bottom right, #ff8a00,#975fea);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+	font-size: 1.2em;
+	background: linear-gradient(to bottom right, #ff8a00, #975fea);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 .menu2 p {
@@ -91,11 +92,11 @@ main {
 
 .menu3 h2 {
 	font-family: 'Dancing Script', cursive;
-  font-size: 2em;
-  background: linear-gradient(to bottom right, #0887fb,#c0d9dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+	font-size: 2em;
+	background: linear-gradient(to bottom right, #0887fb, #c0d9dc);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 .menu3 p {
@@ -111,11 +112,11 @@ main {
 .menu4 h2 {
 	color: #75c15a;
 	font-size: 2em;
-  font-family: 'Kaushan Script', cursive;
-  background: linear-gradient(to bottom right, #75c15a, #cffaa5);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+	font-family: 'Kaushan Script', cursive;
+	background: linear-gradient(to bottom right, #75c15a, #cffaa5);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 .menu4 p {
@@ -196,7 +197,7 @@ main {
 	.menu3,
 	.menu4 {
 		width: 300px;
-  }
+	}
 	.inside {
 		width: 100%;
 	}
