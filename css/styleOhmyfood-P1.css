@@ -209,3 +209,8 @@ main {
 		margin-bottom: initial;
 	}
 }
+@media only screen and (min-width: 462px) {
+	.inside{
+		margin-top: 26%;
+	}
+}
