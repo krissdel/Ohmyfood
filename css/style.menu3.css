@@ -1,11 +1,9 @@
 @import url("./common.css");
-:root {
-	--primary: #edefef;
-}
+
 
 main {
 	width: 90%;
-	background-color: var(--primary);
+	background-color: var(--primary3);
 	border: 2px solid #f9f9f9e6;
 	box-shadow: 1px 5px 10px #F0F0F0;
 	margin-bottom: 30%;
@@ -105,31 +103,6 @@ h4 {
 	font-family: 'Devonshire', cursive;
 	font-weight: 500;
 }
-
-
-/*---------------animation------------------*/
-
-.left {
-	position: relative;
-}
-
-.left:before {
-	content: "";
-	position: absolute;
-	width: 0;
-	height: 1px;
-	bottom: 0;
-	left: 0;
-	background-color: black;
-	visibility: hidden;
-	transition: all 0.3s ease-in-out;
-}
-
-.left:hover:before {
-	visibility: visible;
-	width: 100%;
-}
-
 
 /*------------------------responsive----------------------*/
 

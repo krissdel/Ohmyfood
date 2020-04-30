@@ -1,10 +1,5 @@
 @import url("./common.css");
-:root {
-	--primary1: #fcdfdb;
-	--primary2: #fff5fe;
-	--primary3: #f9f9f9;
-	--primary4: #fdfffd;
-}
+
 
 @keyframes flash {
 	25%,
@@ -54,12 +49,14 @@ main {
 	font-size: 2em;
 	font-family: 'Devonshire', cursive;
 	font-weight: lighter;
+	margin-top: 0px;
 }
 
 .menu1 p {
 	color: #3d1319;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: 'Kalam', cursive;
+	font-weight: bold;
 }
 
 .menu2 {

@@ -1,11 +1,9 @@
 @import url("./common.css");
-:root{
-    --primary: #f8f3f3e6;
-}
+
 main {
 	color: #3d1319;
 	width: 90%;
-	background-color: var(--primary);
+	background-color: var(--primarymention);
 	border: 2px solid #f9f9f9e6;
 	box-shadow: 1px 5px 10px #F0F0F0;
 	margin-bottom: 30%;
