@@ -37,11 +37,6 @@ main {
 	margin: auto;
 	margin-top: 8%;
 }
-
-.inside {
-	margin-top: 42%;
-}
-
 .inside:hover {
 	transition: all 200ms ease-in;
 	transform: scale(1.2);
@@ -51,7 +46,8 @@ main {
 .menu1 {
 	background-color: var(--primary1);
 	align-items: center;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .inside h2 {
@@ -68,6 +64,9 @@ main {
 
 .menu2 {
 	background-color: var(--primary2);
+	align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .menu2 h2 {
@@ -87,6 +86,9 @@ main {
 
 .menu3 {
 	background-color: var(--primary3);
+	align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .menu3 h2 {
@@ -105,7 +107,10 @@ main {
 }
 
 .menu4 {
-	background-color: var(--primary4)
+	background-color: var(--primary4);
+	align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .menu4 h2 {
@@ -196,6 +201,7 @@ main {
 	.menu3,
 	.menu4 {
 		width: 300px;
+		
 	}
 	.inside {
 		width: 100%;
@@ -206,10 +212,5 @@ main {
 	}
 	.next {
 		margin-bottom: initial;
-	}
-}
-@media only screen and (min-width: 462px) {
-	.inside{
-		margin-top: 26%;
 	}
 }
